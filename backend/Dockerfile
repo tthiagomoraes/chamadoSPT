@@ -36,5 +36,5 @@ EXPOSE 8080
 # Configurar JVM para containers
 ENV JAVA_OPTS="-XX:+UseContainerSupport -XX:MaxRAMPercentage=75.0 -Djava.security.egd=file:/dev/./urandom"
 
-# Comando para executar a aplicação
-CMD ["sh", "-c", "java $JAVA_OPTS -jar app.jar"]
+# Comando para executar a aplicação com conversão de URL
+CMD ["sh", "-c", "if [ -n \"$DATABASE_URL\" ]; then export JDBC_DATABASE_URL=\"jdbc:$DATABASE_URL\"; fi && java $JAVA_OPTS -jar app.jar"]
