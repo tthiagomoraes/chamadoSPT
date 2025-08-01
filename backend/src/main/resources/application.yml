@@ -7,27 +7,53 @@ spring:
     username: ${DATABASE_USERNAME:postgres}
     password: ${DATABASE_PASSWORD:root}
     driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 5
+      minimum-idle: 1
+      connection-timeout: 20000
+      idle-timeout: 300000
+      max-lifetime: 1200000
   
   jpa:
     hibernate:
       ddl-auto: update
-    show-sql: true
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: false
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
+        jdbc:
+          time_zone: UTC
+    open-in-view: false
   
-  web:
-    cors:
-      allowed-origins: "http://localhost:3000,http://localhost:3001"
-      allowed-methods: "GET,POST,PUT,DELETE,OPTIONS"
-      allowed-headers: "*"
-      allow-credentials: true
+  security:
+    user:
+      name: admin
+      password: admin
+      roles: ADMIN
 
 server:
   port: ${PORT:8080}
+  error:
+    include-message: always
+    include-binding-errors: always
 
 logging:
   level:
-    com.petrobras.chamados: DEBUG
-    org.springframework.web: DEBUG
+    com.petrobras.chamados: INFO
+    org.springframework.web: WARN
+    org.springframework.security: WARN
+    org.hibernate.SQL: WARN
+    org.hibernate.type.descriptor.sql.BasicBinder: WARN
+    root: WARN
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: when-authorized

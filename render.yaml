@@ -3,7 +3,6 @@ services:
   - type: web
     name: chamados-backend
     runtime: docker
-    buildCommand: mvn clean package -DskipTests
     plan: free
     rootDir: backend
     envVars:
@@ -11,6 +10,14 @@ services:
         fromDatabase:
           name: chamados-postgres
           property: connectionString
+      - key: DATABASE_USERNAME
+        fromDatabase:
+          name: chamados-postgres
+          property: user
+      - key: DATABASE_PASSWORD
+        fromDatabase:
+          name: chamados-postgres
+          property: password
       - key: PORT
         value: 10000
 
