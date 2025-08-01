@@ -1,221 +1,50 @@
-2025-08-01T21:35:59.172737668Z 	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:86) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:35:59.172740188Z 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:266) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:35:59.172742558Z 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:240) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:35:59.172744938Z 	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:35:59.172761119Z 	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4850) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:35:59.172764099Z 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:35:59.172766609Z 	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:35:59.172769199Z 	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:35:59.172773459Z 	at java.base/java.util.concurrent.FutureTask.run(Unknown Source) ~[na:na]
-2025-08-01T21:35:59.172776059Z 	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:35:59.172778999Z 	at java.base/java.util.concurrent.AbstractExecutorService.submit(Unknown Source) ~[na:na]
-2025-08-01T21:35:59.172781599Z 	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:35:59.17278711Z 	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:845) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:35:59.172790019Z 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:35:59.1727926Z 	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:35:59.17279532Z 	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:35:59.1727981Z 	at java.base/java.util.concurrent.FutureTask.run(Unknown Source) ~[na:na]
-2025-08-01T21:35:59.17280083Z 	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:35:59.17280334Z 	at java.base/java.util.concurrent.AbstractExecutorService.submit(Unknown Source) ~[na:na]
-2025-08-01T21:35:59.17283248Z 	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:35:59.172835921Z 	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:240) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:35:59.172838591Z 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:35:59.172841121Z 	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:35:59.172843481Z 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:35:59.172846011Z 	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:917) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:35:59.172848771Z 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:35:59.172851641Z 	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:488) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:35:59.172853991Z 	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:35:59.172856261Z 	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:35:59.172858991Z 	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:501) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:35:59.172867041Z 	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:218) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:35:59.172869952Z 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:35:59.172872472Z 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:35:59.172875292Z 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:610) ~[spring-context-6.1.1.jar!/:6.1.1]
-2025-08-01T21:35:59.172878032Z 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:35:59.172880812Z 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:35:59.172886212Z 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:35:59.172888702Z 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:35:59.172891382Z 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:35:59.172894062Z 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:35:59.172896462Z 	at com.petrobras.chamados.ChamadosBackendApplication.main(ChamadosBackendApplication.java:10) ~[!/:0.0.1-SNAPSHOT]
-2025-08-01T21:35:59.172899112Z 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source) ~[na:na]
-2025-08-01T21:35:59.172901492Z 	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
-2025-08-01T21:35:59.172903942Z 	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91) ~[app.jar:0.0.1-SNAPSHOT]
-2025-08-01T21:35:59.172906362Z 	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53) ~[app.jar:0.0.1-SNAPSHOT]
-2025-08-01T21:35:59.172917053Z 	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58) ~[app.jar:0.0.1-SNAPSHOT]
-2025-08-01T21:35:59.172919653Z 
-2025-08-01T21:35:59.377598653Z 2025-08-01T21:35:59.377Z  WARN 7 --- [chamados-backend] [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-01T21:36:18.759152557Z ==> Exited with status 1
-2025-08-01T21:36:18.777497656Z ==> Common ways to troubleshoot your deploy: https://render.com/docs/troubleshooting-deploys
-2025-08-01T21:36:15.775673981Z 2025-08-01T21:36:15.775Z  WARN 7 --- [chamados-backend] [           main] org.postgresql.util.PGPropertyUtil       : JDBC URL invalid port number: ejoN1n1M43nKqLsrOQVvFMECcN7x0yVA@dpg-d26ij7umcj7s73f20l50-a
-2025-08-01T21:36:15.873975272Z 2025-08-01T21:36:15.873Z ERROR 7 --- [chamados-backend] [           main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.RuntimeException: Driver org.postgresql.Driver claims to not accept jdbcUrl, jdbc:postgresql://chamados_postgres_t7tl_user:ejoN1n1M43nKqLsrOQVvFMECcN7x0yVA@dpg-d26ij7umcj7s73f20l50-a/chamados_postgres_t7tl?sslmode=require
-2025-08-01T21:36:15.875132Z 2025-08-01T21:36:15.874Z ERROR 7 --- [chamados-backend] [           main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationFilter': Unsatisfied dependency expressed through field 'userDetailsService': Error creating bean with name 'userDetailsService': Unsatisfied dependency expressed through field 'userRepository': Error creating bean with name 'userRepository' defined in com.petrobras.chamados.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
-2025-08-01T21:36:16.776332754Z 2025-08-01T21:36:16.775Z  WARN 7 --- [chamados-backend] [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
-2025-08-01T21:36:17.181366489Z 2025-08-01T21:36:17.178Z ERROR 7 --- [chamados-backend] [           main] o.s.boot.SpringApplication               : Application run failed
-2025-08-01T21:36:17.181384059Z 
-2025-08-01T21:36:17.181388289Z org.springframework.context.ApplicationContextException: Unable to start web server
-2025-08-01T21:36:17.181391869Z 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:165) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:36:17.18139554Z 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:610) ~[spring-context-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181397329Z 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:36:17.181399729Z 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:36:17.18140159Z 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:36:17.18140384Z 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:36:17.18140569Z 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:36:17.18140736Z 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:36:17.18140909Z 	at com.petrobras.chamados.ChamadosBackendApplication.main(ChamadosBackendApplication.java:10) ~[!/:0.0.1-SNAPSHOT]
-2025-08-01T21:36:17.18141088Z 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source) ~[na:na]
-2025-08-01T21:36:17.1814132Z 	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
-2025-08-01T21:36:17.18141525Z 	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91) ~[app.jar:0.0.1-SNAPSHOT]
-2025-08-01T21:36:17.18141701Z 	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53) ~[app.jar:0.0.1-SNAPSHOT]
-2025-08-01T21:36:17.18141874Z 	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58) ~[app.jar:0.0.1-SNAPSHOT]
-2025-08-01T21:36:17.1814205Z Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
-2025-08-01T21:36:17.18142236Z 	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:142) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:36:17.18142402Z 	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:36:17.18142576Z 	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:501) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:36:17.18142751Z 	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:218) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:36:17.181443221Z 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:36:17.181446531Z 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:36:17.181450001Z 	... 13 common frames omitted
-2025-08-01T21:36:17.181453591Z Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtAuthenticationFilter': Unsatisfied dependency expressed through field 'userDetailsService': Error creating bean with name 'userDetailsService': Unsatisfied dependency expressed through field 'userRepository': Error creating bean with name 'userRepository' defined in com.petrobras.chamados.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
-2025-08-01T21:36:17.181456871Z 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:772) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181459421Z 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:752) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181488812Z 	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181494952Z 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:493) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181497362Z 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181499402Z 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181501492Z 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181503692Z 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181505792Z 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181507862Z 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181510022Z 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181511972Z 	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:210) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:36:17.181513922Z 	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:173) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:36:17.181515992Z 	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:168) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:36:17.181523703Z 	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:153) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:36:17.181526213Z 	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:86) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:36:17.181529133Z 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:266) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:36:17.181531753Z 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:240) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:36:17.181534773Z 	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:36:17.181537573Z 	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4850) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:36:17.181540343Z 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:36:17.181543063Z 	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:36:17.181545993Z 	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:36:17.181549123Z 	at java.base/java.util.concurrent.FutureTask.run(Unknown Source) ~[na:na]
-2025-08-01T21:36:17.181551873Z 	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:36:17.181553683Z 	at java.base/java.util.concurrent.AbstractExecutorService.submit(Unknown Source) ~[na:na]
-2025-08-01T21:36:17.181555343Z 	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:36:17.181556984Z 	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:845) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:36:17.181558713Z 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:36:17.181560364Z 	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:36:17.181569024Z 	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:36:17.181570954Z 	at java.base/java.util.concurrent.FutureTask.run(Unknown Source) ~[na:na]
-2025-08-01T21:36:17.181572724Z 	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:36:17.181574514Z 	at java.base/java.util.concurrent.AbstractExecutorService.submit(Unknown Source) ~[na:na]
-2025-08-01T21:36:17.181576304Z 	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:36:17.181578054Z 	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:240) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:36:17.181579834Z 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:36:17.181583784Z 	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:36:17.181589544Z 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:36:17.181591344Z 	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:917) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:36:17.181593154Z 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:36:17.181594784Z 	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:488) ~[tomcat-embed-core-10.1.16.jar!/:na]
-2025-08-01T21:36:17.181596464Z 	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123) ~[spring-boot-3.2.0.jar!/:3.2.0]
-2025-08-01T21:36:17.181598154Z 	... 18 common frames omitted
-2025-08-01T21:36:17.181600694Z Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDetailsService': Unsatisfied dependency expressed through field 'userRepository': Error creating bean with name 'userRepository' defined in com.petrobras.chamados.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
-2025-08-01T21:36:17.181602505Z 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:772) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181604285Z 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:752) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181605985Z 	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181607745Z 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:493) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181609855Z 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181612565Z 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181615785Z 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181618685Z 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181621445Z 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181624325Z 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181627065Z 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181629895Z 	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181639586Z 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1441) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181641575Z 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1348) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181646756Z 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:769) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181648486Z 	... 60 common frames omitted
-2025-08-01T21:36:17.181651206Z Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.petrobras.chamados.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
-2025-08-01T21:36:17.181652956Z 	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181654906Z 	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181656566Z 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1686) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181658206Z 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1435) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181659886Z 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181661536Z 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181663276Z 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181664976Z 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181666716Z 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181668386Z 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181672236Z 	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181673946Z 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1441) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181675636Z 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1348) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181677746Z 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:769) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181679427Z 	... 74 common frames omitted
-2025-08-01T21:36:17.181683027Z Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaSharedEM_entityManagerFactory': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument
-2025-08-01T21:36:17.181690947Z 	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181692817Z 	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181694567Z 	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:689) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181703317Z 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:513) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181706387Z 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181709167Z 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1166) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181711987Z 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181714867Z 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181717557Z 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181720357Z 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181723017Z 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181725777Z 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181728528Z 	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181730308Z 	... 87 common frames omitted
-2025-08-01T21:36:17.181732228Z Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.RuntimeException: Driver org.postgresql.Driver claims to not accept jdbcUrl, jdbc:postgresql://chamados_postgres_t7tl_user:ejoN1n1M43nKqLsrOQVvFMECcN7x0yVA@dpg-d26ij7umcj7s73f20l50-a/chamados_postgres_t7tl?sslmode=require
-2025-08-01T21:36:17.181733988Z 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1775) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181735828Z 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181737478Z 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181739198Z 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181744198Z 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181745908Z 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181747538Z 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181749188Z 	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181750848Z 	... 99 common frames omitted
-2025-08-01T21:36:17.181752918Z Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.RuntimeException: Driver org.postgresql.Driver claims to not accept jdbcUrl, jdbc:postgresql://chamados_postgres_t7tl_user:ejoN1n1M43nKqLsrOQVvFMECcN7x0yVA@dpg-d26ij7umcj7s73f20l50-a/chamados_postgres_t7tl?sslmode=require
-2025-08-01T21:36:17.181754668Z 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181777419Z 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181789229Z 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181796759Z 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181799609Z 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771) ~[spring-beans-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181803239Z 	... 106 common frames omitted
-2025-08-01T21:36:17.181806719Z Caused by: java.lang.RuntimeException: Driver org.postgresql.Driver claims to not accept jdbcUrl, jdbc:postgresql://chamados_postgres_t7tl_user:ejoN1n1M43nKqLsrOQVvFMECcN7x0yVA@dpg-d26ij7umcj7s73f20l50-a/chamados_postgres_t7tl?sslmode=require
-2025-08-01T21:36:17.18180976Z 	at com.zaxxer.hikari.util.DriverDataSource.<init>(DriverDataSource.java:110) ~[HikariCP-5.0.1.jar!/:na]
-2025-08-01T21:36:17.18181244Z 	at com.zaxxer.hikari.pool.PoolBase.initializeDataSource(PoolBase.java:326) ~[HikariCP-5.0.1.jar!/:na]
-2025-08-01T21:36:17.18181582Z 	at com.zaxxer.hikari.pool.PoolBase.<init>(PoolBase.java:112) ~[HikariCP-5.0.1.jar!/:na]
-2025-08-01T21:36:17.1818186Z 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:93) ~[HikariCP-5.0.1.jar!/:na]
-2025-08-01T21:36:17.18182094Z 	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-5.0.1.jar!/:na]
-2025-08-01T21:36:17.18182325Z 	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
-2025-08-01T21:36:17.18182638Z 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:424) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
-2025-08-01T21:36:17.18182869Z 	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
-2025-08-01T21:36:17.18183884Z 	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
-2025-08-01T21:36:17.18184167Z 	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
-2025-08-01T21:36:17.18184522Z 	at org.hibernate.tool.schema.extract.spi.ExtractionContext.getQueryResults(ExtractionContext.java:43) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
-2025-08-01T21:36:17.18184816Z 	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:39) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
-2025-08-01T21:36:17.181850961Z 	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:66) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
-2025-08-01T21:36:17.181853581Z 	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:60) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
-2025-08-01T21:36:17.181857351Z 	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:185) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
-2025-08-01T21:36:17.181859721Z 	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:98) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
-2025-08-01T21:36:17.181862141Z 	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:286) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
-2025-08-01T21:36:17.181864901Z 	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
-2025-08-01T21:36:17.181867761Z 	at java.base/java.util.HashMap.forEach(Unknown Source) ~[na:na]
-2025-08-01T21:36:17.181870181Z 	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
-2025-08-01T21:36:17.181872581Z 	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
-2025-08-01T21:36:17.181875001Z 	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
-2025-08-01T21:36:17.181890312Z 	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:295) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
-2025-08-01T21:36:17.181893132Z 	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
-2025-08-01T21:36:17.181895472Z 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
-2025-08-01T21:36:17.181899012Z 	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181901832Z 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181904522Z 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.1.jar!/:6.1.1]
-2025-08-01T21:36:17.181920982Z 	... 110 common frames omitted
-2025-08-01T21:36:17.181923492Z 
-2025-08-01T21:36:18.14445217Z sh: 1: [[: not found
+2025-08-01T22:09:54.698313388Z #22 sha256:e084f2732477590c1147c9a6fc5d7ba33e0bcf828902f0b4ace1871e396dccf9 96.47MB / 110.37MB 0.8s
+2025-08-01T22:09:54.999699206Z #22 sha256:e084f2732477590c1147c9a6fc5d7ba33e0bcf828902f0b4ace1871e396dccf9 110.37MB / 110.37MB 1.0s done
+2025-08-01T22:09:54.999722837Z #22 extracting sha256:e084f2732477590c1147c9a6fc5d7ba33e0bcf828902f0b4ace1871e396dccf9
+2025-08-01T22:09:56.502279095Z #22 extracting sha256:e084f2732477590c1147c9a6fc5d7ba33e0bcf828902f0b4ace1871e396dccf9 1.4s done
+2025-08-01T22:09:56.502309106Z #22 sha256:4d6c79ecef3aabbb52a46af8cb4a4c4e0f756756a4c6f0a760314e59281308a0 12.46kB / 12.46kB done
+2025-08-01T22:09:56.502314886Z #22 extracting sha256:4d6c79ecef3aabbb52a46af8cb4a4c4e0f756756a4c6f0a760314e59281308a0 0.0s done
+2025-08-01T22:09:56.652323119Z #22 sha256:eac4678d64c7aefc0f514ec6fa45a03e43b098a9806f11214baab94929a4f3e2 20.97MB / 50.30MB 0.2s
+2025-08-01T22:09:56.802595358Z #22 sha256:eac4678d64c7aefc0f514ec6fa45a03e43b098a9806f11214baab94929a4f3e2 39.85MB / 50.30MB 0.3s
+2025-08-01T22:09:56.952926108Z #22 sha256:eac4678d64c7aefc0f514ec6fa45a03e43b098a9806f11214baab94929a4f3e2 50.30MB / 50.30MB 0.4s done
+2025-08-01T22:09:56.952945659Z #22 extracting sha256:eac4678d64c7aefc0f514ec6fa45a03e43b098a9806f11214baab94929a4f3e2
+2025-08-01T22:09:57.244814344Z #22 extracting sha256:eac4678d64c7aefc0f514ec6fa45a03e43b098a9806f11214baab94929a4f3e2 0.4s done
+2025-08-01T22:09:57.343079336Z #22 writing cache manifest sha256:a42fbb12bacd937c324da23f47f6aeec41cc610d8b851661ca90a6cf7c8e3685 done
+2025-08-01T22:09:57.343095526Z #22 DONE 14.5s
+2025-08-01T22:09:58.363438881Z Pushing image to registry...
+2025-08-01T22:09:58.97954372Z Upload succeeded
+2025-08-01T22:10:03.907402068Z ==> Deploying...
+2025-08-01T22:10:19.300030813Z Converting DATABASE_URL: postgresql://chamados_postgres_t7tl_user:ejoN1n1M43nKqLsrOQVvFMECcN7x0yVA@dpg-d26ij7umcj7s73f20l50-a/chamados_postgres_t7tl
+2025-08-01T22:10:19.300059944Z URL without protocol: chamados_postgres_t7tl_user:ejoN1n1M43nKqLsrOQVvFMECcN7x0yVA@dpg-d26ij7umcj7s73f20l50-a/chamados_postgres_t7tl
+2025-08-01T22:10:19.300063954Z Credentials: chamados_postgres_t7tl_user:ejoN1n1M43nKqLsrOQVvFMECcN7x0yVA
+2025-08-01T22:10:19.300066614Z Host part: dpg-d26ij7umcj7s73f20l50-a/chamados_postgres_t7tl
+2025-08-01T22:10:19.300069584Z Host:Port: dpg-d26ij7umcj7s73f20l50-a
+2025-08-01T22:10:19.300072624Z DB Name: chamados_postgres_t7tl
+2025-08-01T22:10:19.300075334Z Final Host:Port: dpg-d26ij7umcj7s73f20l50-a:5432
+2025-08-01T22:10:19.300078384Z Final JDBC_DATABASE_URL: jdbc:postgresql://dpg-d26ij7umcj7s73f20l50-a:5432/chamados_postgres_t7tl?sslmode=require
+2025-08-01T22:10:19.300080944Z USERNAME: chamados_postgres_t7tl_user
+2025-08-01T22:10:19.300084204Z PASSWORD: [HIDDEN]
+2025-08-01T22:10:19.300087155Z Starting application...
+2025-08-01T22:10:35.927753938Z 
+2025-08-01T22:10:35.927856681Z   .   ____          _            __ _ _
+2025-08-01T22:10:35.927864001Z  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2025-08-01T22:10:35.927872931Z ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2025-08-01T22:10:35.927960124Z  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2025-08-01T22:10:35.927974894Z   '  |____| .__|_| |_|_| |_\__, | / / / /
+2025-08-01T22:10:35.928061256Z  =========|_|==============|___/=/_/_/_/
+2025-08-01T22:10:35.931647219Z  :: Spring Boot ::                (v3.2.0)
+2025-08-01T22:10:35.932344607Z 
+2025-08-01T22:10:37.030892432Z 2025-08-01T22:10:37.028Z  INFO 1 --- [chamados-backend] [           main] c.p.chamados.ChamadosBackendApplication  : Starting ChamadosBackendApplication v0.0.1-SNAPSHOT using Java 21.0.7 with PID 1 (/app/app.jar started by spring in /app)
+2025-08-01T22:10:37.032211406Z 2025-08-01T22:10:37.032Z  INFO 1 --- [chamados-backend] [           main] c.p.chamados.ChamadosBackendApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-08-01T22:11:18.935690145Z ==> No open ports detected, continuing to scan...
+2025-08-01T22:11:19.024907949Z ==> Docs on specifying a port: https://render.com/docs/web-services#port-binding
+2025-08-01T22:12:00.732389491Z 2025-08-01T22:12:00.732Z  WARN 1 --- [chamados-backend] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-01T22:12:10.429547947Z 2025-08-01T22:12:10.429Z  INFO 1 --- [chamados-backend] [           main] c.p.chamados.ChamadosBackendApplication  : Started ChamadosBackendApplication in 102.495 seconds (process running for 111.095)
+2025-08-01T22:12:12.329327571Z 2025-08-01T22:12:12.328Z  WARN 1 --- [chamados-backend] [io-10000-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2025-08-01T22:12:13.622430499Z ==> Your service is live 🎉
+2025-08-01T22:12:13.666798353Z ==> 
+2025-08-01T22:12:13.698687289Z ==> ///////////////////////////////////////////////////////////
+2025-08-01T22:12:13.732482104Z ==> 
+2025-08-01T22:12:13.762312611Z ==> Available at your primary URL https://chamados-backend-7osj.onrender.com
+2025-08-01T22:12:13.792944176Z ==> 
+2025-08-01T22:12:13.826818082Z ==> ///////////////////////////////////////////////////////////

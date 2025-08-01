@@ -13,6 +13,7 @@ interface User {
 interface AuthContextType {
   user: User | null
   login: (username: string, password: string) => Promise<boolean>
+  loginWithoutPassword: () => Promise<boolean>
   logout: () => void
   loading: boolean
   error: string | null
@@ -77,6 +78,35 @@ export function useAuthLogic() {
     }
   }, [])
 
+  const loginWithoutPassword = useCallback(async (): Promise<boolean> => {
+    setLoading(true)
+    setError(null)
+
+    try {
+      // Login automático com credenciais padrão admin/admin
+      const userData: User = {
+        username: "admin",
+        nome: "Administrador",
+        role: "ADMIN",
+        token: "demo-token-" + Date.now(),
+        expiresIn: Date.now() + (24 * 60 * 60 * 1000), // 24 horas
+      }
+
+      setUser(userData)
+      
+      // Salvar no localStorage
+      localStorage.setItem("user", JSON.stringify(userData))
+      localStorage.setItem("token", userData.token)
+      
+      return true
+    } catch (err) {
+      setError("Erro ao fazer login automático")
+      return false
+    } finally {
+      setLoading(false)
+    }
+  }, [])
+
   const logout = useCallback(() => {
     setUser(null)
     setError(null)
@@ -101,6 +131,7 @@ export function useAuthLogic() {
   return {
     user,
     login,
+    loginWithoutPassword,
     logout,
     loading,
     error,
