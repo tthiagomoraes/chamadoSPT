@@ -17,7 +17,6 @@ services:
   # Frontend Service  
   - type: web
     name: chamados-frontend
-    runtime: node
     buildCommand: npm install --production=false && npm run build
     startCommand: npm start
     plan: free
