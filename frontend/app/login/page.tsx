@@ -13,7 +13,7 @@ import { Loader2 } from "lucide-react"
 export default function LoginPage() {
   const [username, setUsername] = useState("")
   const [password, setPassword] = useState("")
-  const { login, loginWithoutPassword, loading, error } = useAuth()
+  const { login, loading, error } = useAuth()
   const router = useRouter()
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -25,12 +25,7 @@ export default function LoginPage() {
     }
   }
 
-  const handlePasswordlessLogin = async () => {
-    const success = await loginWithoutPassword()
-    if (success) {
-      router.push("/")
-    }
-  }
+
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
@@ -85,25 +80,7 @@ export default function LoginPage() {
               )}
             </Button>
           </form>
-          
-          <div className="mt-4">
-            <Button 
-              type="button" 
-              variant="outline" 
-              className="w-full" 
-              disabled={loading}
-              onClick={handlePasswordlessLogin}
-            >
-              {loading ? (
-                <>
-                  <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                  Acessando...
-                </>
-              ) : (
-                "Acesso Rápido (Sem Senha)"
-              )}
-            </Button>
-          </div>
+
         </CardContent>
       </Card>
     </div>

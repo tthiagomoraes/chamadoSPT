@@ -13,7 +13,6 @@ interface User {
 interface AuthContextType {
   user: User | null
   login: (username: string, password: string) => Promise<boolean>
-  loginWithoutPassword: () => Promise<boolean>
   logout: () => void
   loading: boolean
   error: string | null
@@ -40,7 +39,9 @@ export function useAuthLogic() {
     setError(null)
 
     try {
-      const response = await fetch("http://localhost:8080/api/auth/login", {
+      // Fazer requisição direta para o endpoint de login
+      const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8080/api"
+      const response = await fetch(`${API_BASE_URL}/auth/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -78,40 +79,16 @@ export function useAuthLogic() {
     }
   }, [])
 
-  const loginWithoutPassword = useCallback(async (): Promise<boolean> => {
-    setLoading(true)
-    setError(null)
 
-    try {
-      // Login automático com credenciais padrão admin/admin
-      const userData: User = {
-        username: "admin",
-        nome: "Administrador",
-        role: "ADMIN",
-        token: "demo-token-" + Date.now(),
-        expiresIn: Date.now() + (24 * 60 * 60 * 1000), // 24 horas
-      }
-
-      setUser(userData)
-      
-      // Salvar no localStorage
-      localStorage.setItem("user", JSON.stringify(userData))
-      localStorage.setItem("token", userData.token)
-      
-      return true
-    } catch (err) {
-      setError("Erro ao fazer login automático")
-      return false
-    } finally {
-      setLoading(false)
-    }
-  }, [])
 
   const logout = useCallback(() => {
     setUser(null)
-    setError(null)
     localStorage.removeItem("user")
     localStorage.removeItem("token")
+    // Redirecionar para login
+    if (typeof window !== 'undefined') {
+      window.location.href = '/login'
+    }
   }, [])
 
   // Verificar se há um usuário salvo no localStorage
@@ -131,7 +108,6 @@ export function useAuthLogic() {
   return {
     user,
     login,
-    loginWithoutPassword,
     logout,
     loading,
     error,

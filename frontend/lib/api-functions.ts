@@ -30,14 +30,35 @@ async function apiRequest<T>(endpoint: string, options: RequestInit = {}): Promi
   }
 
   try {
+    console.log('API Request:', { url, token: token ? 'present' : 'missing', config })
     const response = await fetch(url, config)
+    console.log('API Response:', { status: response.status, ok: response.ok })
     
     if (!response.ok) {
-      const errorData = await response.json().catch(() => ({ message: "Erro desconhecido" }))
+      let errorData
+      try {
+        errorData = await response.json()
+        console.log('Error response data:', errorData)
+      } catch (parseError) {
+        console.log('Failed to parse error response:', parseError)
+        errorData = { message: "Erro desconhecido" }
+      }
+      
+      if (response.status === 401 || response.status === 403) {
+        // Token expirado, inválido ou sem permissão - limpar localStorage e redirecionar
+        localStorage.removeItem("user")
+        localStorage.removeItem("token")
+        if (typeof window !== 'undefined') {
+          window.location.href = '/login'
+        }
+        throw new ApiError("Sessão expirada ou sem permissão. Faça login novamente.", response.status)
+      }
+      
       throw new ApiError(errorData.message || `HTTP error! status: ${response.status}`, response.status)
     }
 
     const data: ApiResponse<T> = await response.json()
+    console.log('API Success data:', data)
     
     if (!data.success) {
       throw new ApiError(data.message || "Erro na operação", 400)
@@ -45,6 +66,8 @@ async function apiRequest<T>(endpoint: string, options: RequestInit = {}): Promi
     
     return data.data
   } catch (error) {
+    console.error('API Request error:', error)
+    
     if (error instanceof ApiError) {
       throw error
     }
@@ -53,7 +76,7 @@ async function apiRequest<T>(endpoint: string, options: RequestInit = {}): Promi
       throw new ApiError("Erro de conexão com o servidor", 500)
     }
     
-    throw new ApiError("Erro desconhecido", 500)
+    throw new ApiError(`Erro desconhecido: ${error instanceof Error ? error.message : 'Unknown error'}`, 500)
   }
 }
 
