@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(mvn:*)",
+      "Bash(npm run dev:*)",
+      "Bash(psql:*)",
+      "Bash(where psql)",
+      "Bash(dir \"C:\\Program Files\\PostgreSQL\" /b)",
+      "Bash(\"C:\\Program Files\\PostgreSQL\\17\\bin\\psql.exe\" -U postgres -h localhost -c \"CREATE DATABASE chamdospt;\")",
+      "Bash(set PGPASSWORD=root)",
+      "Bash(\"C:\\Program Files\\PostgreSQL\\17\\bin\\createdb.exe\" -U postgres -h localhost chamdospt)",
+      "Bash(sc query:*)",
+      "Bash(npm install)",
+      "Bash(npm install:*)",
+      "Bash(curl:*)",
+      "Bash(taskkill:*)",
+      "Bash(wmic process where:*)",
+      "Bash(powershell:*)",
+      "Bash(rm:*)",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": []
+  }
+}

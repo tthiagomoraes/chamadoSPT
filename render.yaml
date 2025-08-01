@@ -1,0 +1,32 @@
+services:
+  # Backend Service
+  - type: web
+    name: chamados-backend
+    env: java
+    buildCommand: cd backend && mvn clean package -DskipTests
+    startCommand: cd backend && java -jar target/chamados-backend-0.0.1-SNAPSHOT.jar
+    plan: free
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: chamados-postgres
+          property: connectionString
+      - key: PORT
+        value: 10000
+
+  # Frontend Service  
+  - type: web
+    name: chamados-frontend
+    env: node
+    buildCommand: cd frontend && npm ci && npm run build
+    startCommand: cd frontend && npm start
+    plan: free
+    envVars:
+      - key: NEXT_PUBLIC_API_URL
+        value: https://chamados-backend.onrender.com/api
+      - key: NODE_ENV
+        value: production
+
+databases:
+  - name: chamados-postgres
+    plan: free
