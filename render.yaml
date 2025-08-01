@@ -4,7 +4,6 @@ services:
     name: chamados-backend
     runtime: docker
     buildCommand: mvn clean package -DskipTests
-    startCommand: java -jar target/chamados-backend-0.0.1-SNAPSHOT.jar
     plan: free
     rootDir: backend
     envVars:
@@ -25,7 +24,7 @@ services:
     rootDir: frontend
     envVars:
       - key: NEXT_PUBLIC_API_URL
-        value: https://chamados-backend.onrender.com/api
+         value: https://chamados-backend.onrender.com/api
       - key: NODE_ENV
         value: production
 
