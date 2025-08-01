@@ -24,7 +24,7 @@ services:
     rootDir: frontend
     envVars:
       - key: NEXT_PUBLIC_API_URL
-         value: https://chamados-backend.onrender.com/api
+        value: https://chamados-backend.onrender.com/api
       - key: NODE_ENV
         value: production
 
