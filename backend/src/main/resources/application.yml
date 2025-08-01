@@ -3,7 +3,9 @@ spring:
     name: chamados-backend
   
   datasource:
-    url: ${JDBC_DATABASE_URL:jdbc:postgresql://localhost:5432/chamadospt?user=postgres&password=root}
+    url: ${JDBC_DATABASE_URL:jdbc:postgresql://localhost:5432/chamadospt}
+    username: ${SPRING_DATASOURCE_USERNAME:postgres}
+    password: ${SPRING_DATASOURCE_PASSWORD:root}
     driver-class-name: org.postgresql.Driver
     hikari:
       maximum-pool-size: 5
@@ -20,11 +22,10 @@ spring:
     show-sql: false
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-        format_sql: true
+        '[format_sql]': true
         jdbc:
-          time_zone: UTC
-    open-in-view: false
+          '[time_zone]': UTC
+    '[open-in-view]': false
   
   security:
     user:
@@ -40,11 +41,11 @@ server:
 
 logging:
   level:
-    com.petrobras.chamados: INFO
-    org.springframework.web: WARN
-    org.springframework.security: WARN
-    org.hibernate.SQL: WARN
-    org.hibernate.type.descriptor.sql.BasicBinder: WARN
+    '[com.petrobras.chamados]': INFO
+    '[org.springframework.web]': WARN
+    '[org.springframework.security]': WARN
+    '[org.hibernate.SQL]': WARN
+    '[org.hibernate.type.descriptor.sql.BasicBinder]': WARN
     root: WARN
 
 management:

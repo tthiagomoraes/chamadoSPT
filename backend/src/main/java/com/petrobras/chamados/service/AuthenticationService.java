@@ -27,7 +27,7 @@ public class AuthenticationService {
 
     public LoginResponseDTO authenticate(LoginRequestDTO request) throws AuthenticationException {
         // Autenticar o usuário
-        Authentication authentication = authenticationManager.authenticate(
+        authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(request.getUsername(), request.getPassword())
         );
 

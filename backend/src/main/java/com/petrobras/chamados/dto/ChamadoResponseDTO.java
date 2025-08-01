@@ -2,7 +2,6 @@ package com.petrobras.chamados.dto;
 
 import com.petrobras.chamados.entity.Chamado;
 
-import java.time.LocalDateTime;
 
 public class ChamadoResponseDTO {
     private Long id;
