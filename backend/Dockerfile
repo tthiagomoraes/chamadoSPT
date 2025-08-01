@@ -94,4 +94,4 @@ RUN echo '#!/bin/bash' > /app/start.sh && \
     chmod +x /app/start.sh
 
 # Comando para executar a aplicação
-CMD ["/app/start.sh"]
+CMD ["/bin/bash", "/app/start.sh"]
