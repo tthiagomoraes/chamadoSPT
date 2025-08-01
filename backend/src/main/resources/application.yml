@@ -3,9 +3,7 @@ spring:
     name: chamados-backend
   
   datasource:
-    url: ${JDBC_DATABASE_URL:jdbc:postgresql://localhost:5432/chamadospt}
-    username: ${DATABASE_USERNAME:postgres}
-    password: ${DATABASE_PASSWORD:root}
+    url: ${JDBC_DATABASE_URL:jdbc:postgresql://localhost:5432/chamadospt?user=postgres&password=root}
     driver-class-name: org.postgresql.Driver
     hikari:
       maximum-pool-size: 5
