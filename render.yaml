@@ -6,6 +6,7 @@ services:
     buildCommand: cd backend && mvn clean package -DskipTests
     startCommand: cd backend && java -jar target/chamados-backend-0.0.1-SNAPSHOT.jar
     plan: free
+    rootDir: backend
     envVars:
       - key: DATABASE_URL
         fromDatabase:
@@ -18,9 +19,10 @@ services:
   - type: web
     name: chamados-frontend
     env: node
-    buildCommand: cd frontend && npm ci && npm run build
-    startCommand: cd frontend && npm start
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
     plan: free
+    rootDir: frontend
     envVars:
       - key: NEXT_PUBLIC_API_URL
         value: https://chamados-backend.onrender.com/api
