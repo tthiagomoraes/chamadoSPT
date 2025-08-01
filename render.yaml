@@ -19,7 +19,7 @@ services:
   - type: web
     name: chamados-frontend
     env: node
-    buildCommand: npm ci && npm run build
+    buildCommand: npm install --production=false && npm run build
     startCommand: npm start
     plan: free
     rootDir: frontend

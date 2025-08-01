@@ -71,7 +71,21 @@ mvn clean compile exec:java -Dexec.mainClass="com.petrobras.chamados.ChamadosBac
 
 ### Frontend (se der erro):
 ```bash
+# Comando correto para Next.js
 npm install --production=false && npm run build
-# ou  
+
+# Alternativas
+npm ci && npm run build
 yarn install && yarn build
+
+# Para debug
+node --version
+npm --version  
+npm list next
 ```
+
+### ⚠️ Erro Common: react-scripts
+Se aparecer erro `react-scripts: command not found`:
+- Confirme que está na pasta `frontend/`
+- Verifique se o package.json tem `"build": "next build"`
+- Use: `npm install --production=false` antes do build
